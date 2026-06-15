@@ -17,7 +17,7 @@ if (getenv("MYSQLHOST")) {
     // Note: Set to 'host.docker.internal' so your Docker container can see your local machine's MySQL.
     // If you run locally via XAMPP without Docker, you can change this back to 'localhost'.
     $conn = mysqli_connect(
-        "localhost", 
+        "host.docker.internal", 
         "root",
         "",
         "simple_menu",
